@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #E0FF4F;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(
+        90deg,
+        rgba(241,237,220,1) 0%,
+        rgba(255,255,253,1) 50%
+        rgba(252,246,232,1) 100%
+    );
+    padding: 70px 0;
+}
+
+.menu {
+    position:  absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color:black;
+}
+
+.menu .navbar ul li a:hover {
+    color: white;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.promociones-contenedor {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background-color: white;
+}
+
+.promociones-contenedor-texto {
+    flex-basis: 40%;
+}
+
+.promociones-contenedor-texto h1 {
+    font-size: 70px;
+    line-height: 1;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    color: black;
+    border: 2px solid black;
+    text-transform: capitalize;
+    border-radius: 15px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+}
+
+.menu-img {
+    flex-basis: 60%;
+}
+
+.menu-img img {
+    border-radius: 20px;
+}
+
+.caja-oferta {
+    padding: 100px 0;
+}
+
+.caja-oferta h2 {
+    font-size: 40px;
+    line-height: 1;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.oferta-contenedor {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.oferta-1 {
+    flex-basis: calc(30% - 30px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    padding: 25px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.oferta-1 img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.oferta-1 h3 {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.oferta-texto p{
+    margin-bottom: 10px;
+}
+
+.precio {
+    color:black;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.tarjeta {
+    flex-basis: 40%;
+    background: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    ),
+    url(../img/jabon-base-glicerina.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 10px;
+
+}
+
+.tarjeta h3 {
+    font-size: 30px;
+    color: #0B3954;
+    text-transform: uppercase;
+}
+
+.tarjeta p {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #E0FF4F;
+    margin-bottom: 20px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 8px 30px;
+    border: 3px solid #0B3954;
+    color: #E0FF4F;
+    border-radius: 15px;
+}
+
+.promociones {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.caja-promociones {
+    display: flex;
+}
+
+.promociones-texto {
+    flex-basis: 40%;
+}
+
+.promocion-img {
+    flex-basis: 60%;
+    text-align: center;
+}
+
+.promocion-img img {
+    width: 1200px;
+}
+
+.inicio-productos {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contenedor-inicio-producto {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.noticia {
+    padding: 50px 0 100px 0;
+}
+
+.noticia-contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.noticia-1 {
+    flex-basis: calc(33.3% - 30px);
+    margin-top: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.noticia-texto {
+    padding: 40px;
+}
+
+.btn-noticia {
+    display: inline-block;
+    border: 3px solid #0B3954;
+    border-radius: 15px;
+    padding: 8px 25px;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #0B3954;
+}
+
+.titulo-nosotros {
+    display: block;
+    padding-left: 40px;
+}
+
+.titulo-nosotros h1{
+    text-align: center;
+}
+
+.nosotros {
+    display: inline-block;
+}
+
+.noticia-1 {
+    text-align: center;
+}
+
+
+.patrocinadores {
+    display: flex;
+    justify-content: space-around;
+}
+
+.patrocinadores img {
+    width: 250px;
+}
+
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado-texto {
+    flex-basis: 50%;
+    margin-right: 25px;
+}
+
+.encabezado-texto h2 {
+    color: #0B3954;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.encabezado-texto h1 {
+    font-size: 70px;
+    text-transform: capitalize;
+    line-height: 1;
+    color: white;
+    margin-bottom: 35px;
+}
+
+.encabezado-texto p {
+    font-size: 18px;
+    color: #0B3954;
+    margin-bottom: 35px;
+}
+
+.encabezado-boton {
+    display: flex;
+}
+
+.btn-3 {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #0B3954;
+    margin-right: 20px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 100px;
+}
+
+.encabezado-img {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.encabezado-img img {
+    height: 400px;
+}
+
+@media (max-width:991px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+    
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        color: white;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .logo {
+        display: none;
+    }
+    
+
+}
