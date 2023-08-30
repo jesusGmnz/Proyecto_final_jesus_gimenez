@@ -8,9 +8,14 @@
     list-style: none;
 }
 
+
 body {
     font-family: 'Rubik', sans-serif;
-    background-color: #E0FF4F;
+    background: url(../img/4081459.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 img {
@@ -213,6 +218,9 @@ p{
 .promociones {
     padding: 60px 0;
     background-color: white;
+    border-radius: 20px;
+    background-image: url(../img/4081459.jpg);
+
 }
 
 .caja-promociones {
@@ -221,15 +229,18 @@ p{
 
 .promociones-texto {
     flex-basis: 40%;
+    margin: 10px 10px 10px 10px;
 }
 
 .promocion-img {
     flex-basis: 60%;
     text-align: center;
+    margin: 10px 10px 10px 10px;
 }
 
 .promocion-img img {
     width: 1200px;
+    border-radius: 20px;
 }
 
 .inicio-productos {
@@ -305,6 +316,7 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 100px;
 }
 
 .encabezado-texto {
@@ -324,7 +336,7 @@ p{
     font-size: 70px;
     text-transform: capitalize;
     line-height: 1;
-    color: white;
+    color: #0B3954;
     margin-bottom: 35px;
 }
 
@@ -354,8 +366,11 @@ p{
 }
 
 .encabezado-img img {
-    height: 400px;
+    max-width: 50%;
+    border-radius: 50px;
 }
+
+
 
 @media (max-width:991px) {
 
@@ -372,7 +387,6 @@ p{
         top: 100%;
         left: 0;
         right: 0;
-        background-color: black;
         display: none;
     }
 
@@ -381,7 +395,7 @@ p{
     }
 
     .menu .navbar ul li a {
-        color: white;
+        color: #0B3954;
     }
 
     #menu:checked ~ .navbar {
@@ -394,3 +408,4 @@ p{
     
 
 }
+

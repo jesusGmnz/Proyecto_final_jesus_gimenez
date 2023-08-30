@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <title>Document</title>
 </head>
-<body class="p-3 mb-2 bg-light text-dark">
+<body>
 
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+            <div class="container-fluid text-success">
                 <a class="navbar-brand" href="../index.html">Mamushka Jabones</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#gfgnavbar">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse ps-3" id="gfgnavbar">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../index.html">inicio</a>
                     </li>
@@ -35,12 +35,12 @@
                     </li>
                     </ul>
                 </div>
-            </div>
+            <div/>
         </nav>
     </header>
 
-    <section>
-        <form>
+    <section class="d-flex justify-content-center mt-5">
+        <form class="card col-sm-6 p-3">
             <div class="mb-3">
                 <label for="nombre" class="form-label">nombre</label>
                 <input class="form-control form-control-lg" type="text" placeholder="nombre" aria-label=".form-control-lg example">
@@ -61,11 +61,8 @@
                 <label for="exampleFormControlTextarea1" class="form-label">comentario</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-
             <button type="submit" class="btn btn-primary">enviar</button>
         </form>
-
-
     </section>
 
 </body>
