@@ -53,6 +53,7 @@
         cursor: pointer;
         display: none;
     }
+    background-color: white;
 }
 
 .menu {
@@ -63,6 +64,7 @@
                     color: white;
                     -webkit-text-stroke: 1px #292F36;
                 }
+                background-color: white;
             }
         }
     }
@@ -70,6 +72,11 @@
 
 #menu {
     display: none;
+}
+
+.contenedor {
+    border-radius: 15px;
+    
 }
 
 .promociones-contenedor {
